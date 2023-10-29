@@ -11,7 +11,7 @@ export const metadata = {
     default: 'Welcome to the real world!',
     template: '%s | Omer Olcay',
   },
-  description: 'Front-End Engineer.',
+  description: 'Front-End Engineer & Scrum Master @Insider',
 };
 
 export default function RootLayout({ children }) {
