@@ -21,7 +21,7 @@ export default function NavItem({ path, name, blank = false }) {
   return (
     <div
       onClick={handleClick}
-      className={clsx('transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle', {
+      className={clsx('transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle cursor-pointer', {
         'text-neutral-500': !isActive,
       })}
     >

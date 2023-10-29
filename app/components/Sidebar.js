@@ -51,7 +51,7 @@ export default function Navbar() {
                     return <NavItem key={path} path={path} name={name} />;
                   })}
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex'>
                   {contacts.map(({ company, href }) => {
                     return <NavItem key={href} path={href} name={company} blank />;
                   })}
