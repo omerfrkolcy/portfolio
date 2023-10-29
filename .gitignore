@@ -129,10 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# next.js
-/.next/
-/out/
-
 # production
 /build
 
