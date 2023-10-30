@@ -4,26 +4,24 @@ import clsx from 'clsx';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
-export default function NavItem({ path, name, blank = false }) {
+export default function NavItem({ path, name }) {
   let pathname = usePathname() || '/';
 
   const router = useRouter();
   const isActive = path === pathname;
   const handleClick = (e) => {
-    if (blank) {
-      e.preventDefault();
-      window.open(path, '_blank');
-    } else {
-      router.push(path);
-    }
+    router.push(path);
   };
 
   return (
     <div
       onClick={handleClick}
-      className={clsx('transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle cursor-pointer', {
-        'text-neutral-500': !isActive,
-      })}
+      className={clsx(
+        'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle cursor-pointer',
+        {
+          'text-neutral-500': !isActive,
+        }
+      )}
     >
       <span className='relative py-1 px-2'>
         {name}

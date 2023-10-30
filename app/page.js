@@ -14,7 +14,7 @@ const MESSAGES = [
 export default function Main() {
   return (
     <section>
-      <h1 className='font-semibold text-2xl mb-8 tracking-tighter'>welcome to my portfolio</h1>
+      <h1 className='font-semibold text-2xl mb-8 tracking-tighter'>welcome.</h1>
       <Typewriter
         className='prose prose-neutral dark:prose-invert'
         onInit={(typewriter) => {

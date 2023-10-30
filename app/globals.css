@@ -139,3 +139,28 @@ table {
 [data-rehype-pretty-code-title] + pre {
   @apply mt-0 rounded-t-none border-t-0;
 }
+
+@keyframes reflection {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
+.reflection-text {
+  position: relative;
+  font-size: 3em;
+  color: white;
+  animation: reflection 2s infinite alternate;
+}
+
+.reflection-text::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: -110%;
+  left: 0;
+  opacity: 0.3;
+  transform: scaleY(-1);
+  z-index: -1;
+}

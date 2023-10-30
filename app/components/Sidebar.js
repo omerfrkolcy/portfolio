@@ -8,32 +8,13 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/experience': {
-    name: 'experience',
+  '/experiences': {
+    name: 'experiences',
+  },
+  '/contact-me': {
+    name: 'contact me',
   },
 };
-const contacts = [
-  {
-    company: 'gmail',
-    href: 'mailto:omerfrkolcy@gmail.com',
-  },
-  {
-    company: 'linkedin',
-    href: 'https://linkedin.com/in/omerfrkolcy',
-  },
-  {
-    company: 'github',
-    href: 'https://github.com/omerfrkolcy',
-  },
-  {
-    company: 'github (company)',
-    href: 'https://github.com/omerfolcay',
-  },
-  {
-    company: 'medium',
-    href: 'https://medium.com/@omerfrkolcy',
-  },
-];
 
 export default function Navbar() {
   return (
@@ -49,11 +30,6 @@ export default function Navbar() {
                 <div className='flex'>
                   {Object.entries(navItems).map(([path, { name }]) => {
                     return <NavItem key={path} path={path} name={name} />;
-                  })}
-                </div>
-                <div className='flex'>
-                  {contacts.map(({ company, href }) => {
-                    return <NavItem key={href} path={href} name={company} blank />;
                   })}
                 </div>
               </Suspense>
