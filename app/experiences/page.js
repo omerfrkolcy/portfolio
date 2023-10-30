@@ -14,7 +14,7 @@ import Insider from '@/public/insider.svg';
 const experiences = [
   {
     date: '2018 Jun',
-    logo: <Insider className='w-48 fill-black dark:fill-white' />,
+    logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
     role: 'Software Engineer in QA',
     color: 'secondary',
     variant: 'default',
@@ -26,7 +26,7 @@ const experiences = [
   },
   {
     date: '2020 Nov - 2021 Jul (Secondary Role)',
-    logo: <Insider className='w-48 fill-black dark:fill-white' />,
+    logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
     role: 'Technical Account Manager',
     color: 'primary',
     variant: 'outlined',
@@ -38,7 +38,7 @@ const experiences = [
   },
   {
     date: '2019 Oct - Present',
-    logo: <Insider className='w-48 fill-black dark:fill-white' />,
+    logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
     role: 'Software Engineer & Scrum Master',
     color: 'secondary',
     variant: 'default',

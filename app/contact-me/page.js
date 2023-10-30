@@ -8,27 +8,27 @@ import ArticleIcon from '@mui/icons-material/Article';
 const contacts = [
   {
     text: 'gmail',
-    icon: <EmailIcon className='min-w-fit mr-4 dark:fill-neutral-200' />,
+    icon: <EmailIcon className='w-12 mr-4 dark:fill-neutral-200' />,
     href: 'mailto:omerfrkolcy@gmail.com',
   },
   {
     text: 'linkedin',
-    icon: <LinkedInIcon className='min-w-fit mr-4 dark:fill-neutral-200' />,
+    icon: <LinkedInIcon className='w-12 mr-4 dark:fill-neutral-200' />,
     href: 'https://linkedin.com/in/omerfrkolcy',
   },
   {
     text: 'github',
-    icon: <GitHubIcon className='min-w-fit mr-4 dark:fill-neutral-200' />,
+    icon: <GitHubIcon className='w-12 mr-4 dark:fill-neutral-200' />,
     href: 'https://github.com/omerfrkolcy',
   },
   {
     text: 'github (company)',
-    icon: <GitHubIcon className='min-w-fit mr-4 dark:fill-neutral-200' />,
+    icon: <GitHubIcon className='w-12 mr-4 dark:fill-neutral-200' />,
     href: 'https://github.com/omerfolcay',
   },
   {
     text: 'medium',
-    icon: <ArticleIcon className='min-w-fit mr-4 dark:fill-neutral-200' />,
+    icon: <ArticleIcon className='w-12 mr-4 dark:fill-neutral-200' />,
     href: 'https://medium.com/@omerfrkolcy',
   },
 ];
