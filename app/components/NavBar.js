@@ -1,20 +1,23 @@
 'use client';
 
 import { LayoutGroup } from 'framer-motion';
-import NavItem from './NavItem';
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
+import NavItem from '@/app/components/NavItem';
 
-const navItems = {
-  '/': {
+const navItems = [
+  {
     name: 'home',
+    path: '/',
   },
-  '/experiences': {
+  {
     name: 'experiences',
+    path: '/experiences',
   },
-  '/contact-me': {
+  {
     name: 'contact me',
+    path: '/contact-me',
   },
-};
+];
 
 export default function Navbar() {
   return (
@@ -28,7 +31,7 @@ export default function Navbar() {
             <div className='flex flex-row space-x-0 justify-between w-full'>
               <Suspense fallback={null}>
                 <div className='flex'>
-                  {Object.entries(navItems).map(([path, { name }]) => {
+                  {navItems.map(({ name, path }) => {
                     return <NavItem key={path} path={path} name={name} />;
                   })}
                 </div>

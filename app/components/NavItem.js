@@ -5,17 +5,13 @@ import { usePathname, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 export default function NavItem({ path, name }) {
-  let pathname = usePathname() || '/';
-
+  const pathname = usePathname() || '/';
   const router = useRouter();
   const isActive = path === pathname;
-  const handleClick = (e) => {
-    router.push(path);
-  };
 
   return (
     <div
-      onClick={handleClick}
+      onClick={() => router.push(path)}
       className={clsx(
         'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle cursor-pointer',
         {

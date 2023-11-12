@@ -1,12 +1,10 @@
 import clsx from 'clsx';
 import { GeistSans, GeistMono } from 'geist/font';
-import Sidebar from '@/app/components/Sidebar';
 import { Analytics } from '@vercel/analytics/react';
-import React from 'react';
+import NavBar from '@/app/components/NavBar';
 import '@/app/globals.css';
 
 export const metadata = {
-  metadataBase: new URL('https://localhost'),
   title: {
     default: 'Welcome to the real world!',
     template: '%s | Omer Olcay',
@@ -14,7 +12,7 @@ export const metadata = {
   description: 'Front-End Engineer & Scrum Master @Insider',
 };
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
     <html
       lang='en'
@@ -22,7 +20,7 @@ export default function RootLayout({ children }) {
     >
       <body className='antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto'>
         <main className='flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0'>
-          <Sidebar />
+          <NavBar />
           {children}
           <Analytics />
         </main>
