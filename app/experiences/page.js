@@ -14,14 +14,14 @@ import Insider from '@/public/insider.svg';
 
 const experiences = [
   {
-    date: '2018 Jun',
+    date: '2019 Oct - Present',
     logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
-    role: 'Software Engineer in QA',
+    role: 'Software Engineer & Scrum Master',
     color: 'secondary',
     variant: 'default',
     align: 'items-start',
     connector: {
-      upper: '',
+      upper: 'success.main',
       lower: 'secondary.main',
     },
   },
@@ -34,18 +34,19 @@ const experiences = [
     align: 'items-end',
     connector: {
       upper: 'secondary.main',
-      lower: 'secondary.main',
+      lower: 'primary.main',
     },
   },
+
   {
-    date: '2019 Oct - Present',
+    date: '2018 Jun',
     logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
-    role: 'Software Engineer & Scrum Master',
+    role: 'Software Engineer in QA',
     color: 'secondary',
     variant: 'default',
     align: 'items-start',
     connector: {
-      upper: 'secondary.main',
+      upper: 'primary.main',
       lower: '',
     },
   },

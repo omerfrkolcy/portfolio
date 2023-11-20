@@ -14,6 +14,10 @@ const navItems = [
     path: '/experiences',
   },
   {
+    name: 'projects',
+    path: '/projects',
+  },
+  {
     name: 'contact me',
     path: '/contact-me',
   },
