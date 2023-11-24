@@ -9,11 +9,12 @@ import {
   TimelineOppositeContent,
   TimelineDot,
 } from '@mui/lab';
-import { Typography } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 import Insider from '@/public/insider.svg';
 
 const experiences = [
   {
+    company: 'https://useinsider.com/',
     date: '2019 Oct - Present',
     logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
     role: 'Software Engineer & Scrum Master',
@@ -26,6 +27,7 @@ const experiences = [
     },
   },
   {
+    company: 'https://useinsider.com/',
     date: '2020 Nov - 2021 Jul (Secondary Role)',
     logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
     role: 'Technical Account Manager',
@@ -39,6 +41,7 @@ const experiences = [
   },
 
   {
+    company: 'https://useinsider.com/',
     date: '2018 Jun',
     logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
     role: 'Software Engineer in QA',
@@ -55,7 +58,7 @@ const experiences = [
 export default function Experiences() {
   return (
     <Timeline position='alternate'>
-      {experiences.map(({ date, logo, role, color, variant, align, connector = '' }, index) => (
+      {experiences.map(({ company, date, logo, role, color, variant, align, connector = '' }, index) => (
         <TimelineItem key={index}>
           <TimelineOppositeContent sx={{ m: 'auto 0' }} variant='body2'>
             {date}
@@ -66,7 +69,9 @@ export default function Experiences() {
             <TimelineConnector sx={{ bgcolor: connector.lower }} />
           </TimelineSeparator>
           <TimelineContent className={`flex flex-col ${align} py-4`}>
-            {logo}
+            <Link href={company} target='_blank' rel='noopener noreferrer'>
+              {logo}
+            </Link>
             <Typography>{role}</Typography>
           </TimelineContent>
         </TimelineItem>

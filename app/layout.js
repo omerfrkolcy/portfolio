@@ -9,7 +9,7 @@ export const metadata = {
     default: 'Welcome to the real world!',
     template: '%s | Omer Olcay',
   },
-  description: 'Front-End Engineer & Scrum Master @Insider',
+  description: 'Software Engineer & Scrum Master @Insider',
 };
 
 export default function Layout({ children }) {

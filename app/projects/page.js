@@ -12,6 +12,14 @@ const PROJECT_CONFIG = [
     Link: 'https://ask-me-gpt.vercel.app/',
   },
   {
+    Title: 'scheduled-news',
+    Header: 'Scheduled News',
+    Image: '/scheduled-news.png',
+    Description: 'A news app that you can fetch news from HackerNews to read later, written in Next.js',
+    Repository: 'https://github.com/omerfrkolcy/scheduled-news',
+    Link: 'https://scheduled-news.vercel.app/',
+  },
+  {
     Title: 'react-draggable-layout',
     Header: 'React Draggable Layout',
     Description: 'A draggable layout component, written in React',
