@@ -28,6 +28,14 @@ const PROJECT_CONFIG = [
     Link: 'https://react-draggable-layout.vercel.app/',
   },
   {
+    Title: 'express-ssr-portfolio',
+    Header: 'Express SSR Portfolio',
+    Image: '/express-ssr-portfolio.png',
+    Description: 'A simple portfolio app based on Server-Side Rendering (SSR), written in Express.js and Jade (Pug)',
+    Repository: 'https://github.com/omerfrkolcy/express-ssr-portfolio',
+    Link: 'https://express-ssr-portfolio.vercel.app/',
+  },
+  {
     Title: 'travis',
     Header: 'Travis',
     Image: '/golang-api.svg',
