@@ -1,6 +1,9 @@
+'use client';
+
 import * as React from 'react';
 import { Button, Card, CardActions, CardContent, CardMedia, IconButton, Typography } from '@mui/material';
 import { Fingerprint, GitHub } from '@mui/icons-material';
+import StyledButton from '../components/StyledButton';
 
 const PROJECT_CONFIG = [
   {
@@ -66,9 +69,11 @@ export default function Projects() {
           <Card
             key={index}
             sx={{ maxWidth: 360 }}
-            className='dark:text-white dark:bg-gray-800 text-gray-800 bg-gray-100'
+            classes={{
+              root: 'rounded-lg shadow-lg flex flex-col justify-between dark:text-white dark:bg-gray-800 text-gray-800 bg-gray-100',
+            }}
           >
-            <CardMedia sx={{ height: 180 }} image={Image} title={Title} className=' bg-cover' />
+            <CardMedia sx={{ height: 180 }} image={Image} title={Title} className='bg-cover' />
             <CardContent>
               <Typography gutterBottom variant='h6' component='div'>
                 {Header}
@@ -77,28 +82,18 @@ export default function Projects() {
             </CardContent>
             <CardActions className='flex justify-between'>
               {Repository && (
-                <Button
-                  className='text-black dark:text-white bg-gray-100 dark:bg-gray-900 hover:bg-white dark:hover:bg-black'
-                  variant='contained'
+                <StyledButton
                   href={Repository}
-                  target='_blank'
-                  size='small'
-                  startIcon={<GitHub className='lg:w-8 h-6 fill-gray-900 dark:fill-gray-100' />}
-                >
-                  GitHub
-                </Button>
+                  text='GITHUB'
+                  icon={<GitHub className='lg:w-8 h-6 fill-gray-900 dark:fill-gray-100' />}
+                />
               )}
               {Link && (
-                <Button
-                  className='text-black dark:text-white bg-gray-100 dark:bg-gray-900 hover:bg-white dark:hover:bg-black'
-                  variant='contained'
+                <StyledButton
                   href={Link}
-                  target='_blank'
-                  size='small'
-                  startIcon={<Fingerprint className='lg:w-8 h-6 fill-black dark:fill-white' />}
-                >
-                  PREVIEW
-                </Button>
+                  text='PREVIEW'
+                  icon={<Fingerprint className='lg:w-8 h-6 fill-gray-900 dark:fill-gray-100' />}
+                />
               )}
             </CardActions>
           </Card>
