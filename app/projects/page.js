@@ -23,6 +23,14 @@ const PROJECT_CONFIG = [
     Link: 'https://scheduled-news.vercel.app/',
   },
   {
+    Title: 'video-conference-app',
+    Header: 'Video Conference App',
+    Image: '/video-conference-app.png',
+    Description: 'A video conference app, written in React.js and Twilio Video API',
+    Repository: 'https://github.com/omerfrkolcy/video-conference-app',
+    Link: 'https://video-app-4950-9905-dev.twil.io',
+  },
+  {
     Title: 'react-draggable-layout',
     Header: 'React Draggable Layout',
     Description: 'A draggable layout component, written in React',
