@@ -15,9 +15,9 @@ import Insider from '@/public/insider.svg';
 const experiences = [
   {
     company: 'https://useinsider.com/',
-    date: '2019 Oct - Present',
+    date: '2021 Jul - Present',
     logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
-    role: 'Software Engineer & Scrum Master',
+    role: 'Software Engineer & Scrum Master in Product Development',
     color: 'secondary',
     variant: 'default',
     align: 'items-start',
@@ -28,9 +28,9 @@ const experiences = [
   },
   {
     company: 'https://useinsider.com/',
-    date: '2020 Nov - 2021 Jul (Secondary Role)',
+    date: '2019 Nov - 2021 Jul',
     logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
-    role: 'Technical Account Manager',
+    role: 'Technical Lead in OnSite Development',
     color: 'primary',
     variant: 'outlined',
     align: 'items-end',
@@ -39,12 +39,11 @@ const experiences = [
       lower: 'primary.main',
     },
   },
-
   {
     company: 'https://useinsider.com/',
-    date: '2018 Jun',
+    date: '2018 Jun - 2019 Oct',
     logo: <Insider className='lg:w-48 w-24 fill-black dark:fill-white' />,
-    role: 'Software Engineer in QA',
+    role: 'Software Engineer in OnSite Development',
     color: 'secondary',
     variant: 'default',
     align: 'items-start',
